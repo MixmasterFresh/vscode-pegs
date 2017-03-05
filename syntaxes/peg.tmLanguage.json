@@ -1,0 +1,53 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "PEG Grammar",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#constants"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "constant.other.peg",
+				"match": "(\\!|\\*|\\?)"
+			},{
+				"name": "constant.other.peg",
+				"match": "(\\<\\-)"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.peg",
+			"begin": "(\"|')",
+			"end": "(\"|')",
+			"patterns": [
+				{
+					"name": "constant.character.escape.peg",
+					"match": "\\\\."
+				}
+			]
+		},
+		"constants": {
+			"patterns": [{
+				"name": "storage.type.peg",
+				"match": "\\b([A-Z][A-Z0-9_]*)\\b"
+			},{
+				"name": "constant.numeric.peg",
+				"match": "\\b([a-z][a-z0-9_]*)\\b"
+			},{
+				"name": "comment.peg",
+				"match": "//.*\\n"
+			},{
+				"name": "variable.parameter.peg",
+				"match": "/"
+			}]
+		}
+	},
+	"scopeName": "source.peg"
+}
