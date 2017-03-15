@@ -16,7 +16,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "constant.other.peg",
-				"match": "(\\!|\\*|\\?)"
+				"match": "(\\!|\\*|\\?|\\+)"
 			},{
 				"name": "constant.other.peg",
 				"match": "(\\<\\-)"

@@ -2,7 +2,7 @@
     "name": "pegs",
     "displayName": "PEGs",
     "description": "Allows for support of PEG Grammar Files.",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "publisher": "theaustinseven",
     "engines": {
         "vscode": "^1.10.0"
@@ -11,16 +11,26 @@
         "Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "peg",
-            "aliases": ["PEG Grammar", "peg"],
-            "extensions": [".peg",".peg.partial"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "peg",
-            "scopeName": "source.peg",
-            "path": "./syntaxes/peg.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "peg",
+                "aliases": [
+                    "PEG Grammar",
+                    "peg"
+                ],
+                "extensions": [
+                    ".peg",
+                    ".peg.partial"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "peg",
+                "scopeName": "source.peg",
+                "path": "./syntaxes/peg.tmLanguage.json"
+            }
+        ]
     }
 }
