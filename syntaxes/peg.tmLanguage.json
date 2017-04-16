@@ -42,7 +42,7 @@
 				"match": "\\b([a-z][a-z0-9_]*)\\b"
 			},{
 				"name": "comment.peg",
-				"match": "//.*\\n"
+				"match": "#.*\\n"
 			},{
 				"name": "variable.parameter.peg",
 				"match": "/"

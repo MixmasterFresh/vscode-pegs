@@ -2,7 +2,7 @@
     "name": "pegs",
     "displayName": "PEGs",
     "description": "Allows for support of PEG Grammar Files.",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "publisher": "theaustinseven",
     "engines": {
         "vscode": "^1.10.0"
