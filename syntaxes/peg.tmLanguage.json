@@ -23,13 +23,39 @@
 			}]
 		},
 		"strings": {
-			"name": "string.quoted.double.peg",
-			"begin": "(\"|')",
-			"end": "(\"|')",
 			"patterns": [
 				{
-					"name": "constant.character.escape.peg",
-					"match": "\\\\."
+					"name": "string.regexp.peg",
+					"begin": "\\[",
+					"end": "]",
+					"patterns": [
+						{
+							"name": "constant.character.escape.peg",
+							"match": "\\\\."
+						}
+					]
+				},
+				{
+					"name": "string.quoted.double.peg",
+					"begin": "\"",
+					"end": "\"",
+					"patterns": [
+						{
+							"name": "constant.character.escape.peg",
+							"match": "\\\\."
+						}
+					]
+				},
+				{
+					"name": "string.quoted.single.peg",
+					"begin": "'",
+					"end": "'",
+					"patterns": [
+						{
+							"name": "constant.character.escape.peg",
+							"match": "\\\\."
+						}
+					]
 				}
 			]
 		},
