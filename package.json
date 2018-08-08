@@ -2,8 +2,12 @@
     "name": "pegs",
     "displayName": "PEGs",
     "description": "Allows for support of PEG Grammar Files.",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "theaustinseven",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npm/cli.git"
+    },
     "engines": {
         "vscode": "^1.10.0"
     },
